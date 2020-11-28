@@ -12,33 +12,18 @@ app.use(express.json());
 
 app.use(express.static("public"));
 
-const databaseUrl = "workouts_db"
-const collections = ["workouts"]
+const databaseUrl = "workout"
+ 
 
-const db = mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/custommethoddb" + databaseUrl);
+ mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/" + databaseUrl);
 
 // db.on("error", error => {
 //   console.log("Database Error:", error);
 // });
-
-app.get("/", (req, res) => {
-  res.send(index.html)
-});
-
-// routes
-
-// api GET /workouts
+app.use(require("./routes/api-routes.js"))
+app.use(require("./routes/html-routes.js"))
 
 
-//api GET /exercise
-app.get("/exercise", (req, res) => {
-  res.sendFile(path.join(__dirname, "public/exercise.html"))
-});
-
-
-// api/workouts (PUT request)
-
-// api/workouts (POST request)
 
 
 app.listen(3000, () => {
