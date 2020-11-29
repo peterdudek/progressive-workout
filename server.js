@@ -13,17 +13,20 @@ app.use(express.json());
 app.use(express.static("public"));
 
 const databaseUrl = "workout"
- 
 
- mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/" + databaseUrl);
+mongoose.connect(
+  process.env.MONGODB_URI || "mongodb://localhost/" + databaseUrl,
+  {
+    useNewUrlParser: true,
+    useUnifiedTopology: true,
+    useCreateIndex: true,
+    useFindAndModify: false
+  }
+  );
 
-// db.on("error", error => {
-//   console.log("Database Error:", error);
-// });
+
 app.use(require("./routes/api-routes.js"))
 app.use(require("./routes/html-routes.js"))
-
-
 
 
 app.listen(3000, () => {
