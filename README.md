@@ -54,5 +54,5 @@ Let me know if you would like to contibute to this project
 Testing framework used: Under development
 
 ## Questions
-If you have additional questions, you can reach me via my GitHub profile: [Piotr72us](https://github.com/Piotr72us)<br/>
+If you have additional questions, you can reach me via my GitHub profile: [peterdudek](https://github.com/peterdudek)<br/>
 or send me an email at: piotr72@gmail.com
