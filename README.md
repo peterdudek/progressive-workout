@@ -3,7 +3,7 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 ## Description
-__Fitness Overload__ app comes in handy for fitness enthusiasts focused on tracking their workout patterns in order to reach out their ultimate fitness objectives faster. The app is essential for all those who want to stay on track of their progress. 
+__Progressive Workout__ app comes in handy for fitness enthusiasts focused on tracking their workout patterns in order to reach out their ultimate fitness objectives faster. The app is essential for all those who want to stay on track of their progress. 
 
 ## Table of Contents
 * [Installation](#Installation)
